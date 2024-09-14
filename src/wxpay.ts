@@ -14,6 +14,10 @@ import {
   PrepayRes,
 } from './components/transactions-prepay.ts';
 import { PayDetailRes } from './components/transactions-get.ts';
+import {
+  RefundReqParams,
+  RefundRes,
+} from './components/transactions-refund.ts';
 
 export class WxpaySDK {
   /** 商户号 */
@@ -185,6 +189,25 @@ export class WxpaySDK {
     const res = await this.request({
       method: 'GET',
       path: `/v3/pay/transactions/out-trade-no/${out_trade_no}?${p}`,
+    });
+    if (typeof res !== 'string') {
+      throw new Error('请求有误!');
+    }
+    const result = JSON.parse(res);
+    return result;
+  }
+
+  /**
+   * 微信退款
+   * @link https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/create.html
+   * @param p
+   * @returns
+   */
+  public async refunds(p: RefundReqParams): Promise<RefundRes> {
+    const res = await this.request({
+      method: 'POST',
+      path: '/v3/refund/domestic/refunds',
+      body: p,
     });
     if (typeof res !== 'string') {
       throw new Error('请求有误!');
