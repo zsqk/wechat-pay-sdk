@@ -71,7 +71,10 @@ export type RefundReqParams = {
     refund_quantity: number;
   }>;
 };
-/** 微信退款返回参数 */
+/**
+ * 微信退款返回参数
+ * @link <https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/create.html>
+ */
 export type RefundRes = {
   /** 【微信支付退款号】 微信支付退款号 */
   refund_id: string;
