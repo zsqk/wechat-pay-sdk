@@ -198,7 +198,7 @@ export class WxpaySDK {
   }
 
   /**
-   * 微信退款
+   * 微信支付-退款申请
    * @link https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/create.html
    * @param p
    * @returns
