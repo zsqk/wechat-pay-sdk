@@ -24,5 +24,8 @@
       "indentWidth": 2,
       "singleQuote": true
     }
+  },
+  "imports": {
+    "@zsqk/somefn": "jsr:@zsqk/somefn@^0.1.1"
   }
 }
