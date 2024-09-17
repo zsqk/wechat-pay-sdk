@@ -1,21 +1,20 @@
 {
+  "name": "@zsqk/wechat-pay-sdk",
+  "version": "0.0.1",
+  "exports": "./src/wxpay.ts",
   "compilerOptions": {
     "strict": true
   },
   "lock": false,
   "lint": {
     "rules": {
-      "tags": [
-        "recommended"
-      ],
+      "tags": ["recommended"],
       "include": [
         "eqeqeq",
         "explicit-module-boundary-types",
         "no-throw-literal"
       ],
-      "exclude": [
-        "ban-unused-ignore"
-      ]
+      "exclude": ["ban-unused-ignore"]
     }
   },
   "fmt": {
