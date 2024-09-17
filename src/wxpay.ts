@@ -138,7 +138,7 @@ export class WxpaySDK {
 
   /**
    * 微信支付调起 JSAPI下单
-   * @link https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/direct-jsons/jsapi-prepay.html
+   * @link <https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/direct-jsons/jsapi-prepay.html>
    * @param p
    * @returns
    */
@@ -157,7 +157,7 @@ export class WxpaySDK {
 
   /**
    * 微信支付订单号查询订单
-   * @link https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/query-by-wx-trade-no.html
+   * @link <https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/query-by-wx-trade-no.html>
    * @param transaction_id
    * @returns
    */
@@ -177,7 +177,7 @@ export class WxpaySDK {
 
   /**
    * 商户订单号查询订单
-   * @link https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/query-by-out-trade-no.html
+   * @link <https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/query-by-out-trade-no.html>
    * @param out_trade_no
    * @returns
    */
@@ -199,7 +199,7 @@ export class WxpaySDK {
 
   /**
    * 微信支付-退款申请
-   * @link https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/create.html
+   * @link <https://pay.weixin.qq.com/docs/merchant/apis/jsapi-payment/create.html>
    * @param p
    * @returns
    */
