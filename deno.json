@@ -18,12 +18,10 @@
     }
   },
   "fmt": {
-    "options": {
-      "useTabs": false,
-      "lineWidth": 80,
-      "indentWidth": 2,
-      "singleQuote": true
-    }
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "singleQuote": true
   },
   "imports": {
     "@zsqk/somefn": "jsr:@zsqk/somefn@^0.1.1"
