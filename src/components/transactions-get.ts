@@ -35,7 +35,7 @@ type ReqParams =
     trade_state_desc: string;
     /**
      * 【银行类型】 银行类型，采用字符串类型的银行标识。 银行标识请参考《银行类型对照表》
-     * https://pay.weixin.qq.com/docs/merchant/development/chart/bank-type.html
+     * @link <https://pay.weixin.qq.com/docs/merchant/development/chart/bank-type.html>
      */
     bank_type?: string;
     /**
@@ -198,7 +198,7 @@ export type PayDetailRes = {
   trade_state_desc: string;
   /**
    * 【银行类型】 银行类型，采用字符串类型的银行标识。 银行标识请参考《银行类型对照表》
-   * https://pay.weixin.qq.com/docs/merchant/development/chart/bank-type.html
+   * @link <https://pay.weixin.qq.com/docs/merchant/development/chart/bank-type.html>
    */
   bank_type?: string;
   /** 【附加数据】 附加数据 */
