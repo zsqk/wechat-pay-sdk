@@ -1,5 +1,5 @@
-import { rsaSign } from 'https://deno.land/x/somefn@v0.27.1/js/hash.ts';
-import { encode } from 'https://deno.land/std@0.178.0/encoding/base64.ts';
+import { rsaSign } from '@zsqk/somefn/js/hash';
+import { encodeBase64 } from '@std/encoding';
 
 /**
  * 获取请求签名
@@ -23,7 +23,7 @@ export async function genAuth(
   const text = genText({ ...opt, nonceStr, timestamp });
   const sign = await rsaSign({ hash: 'SHA-256', s: keyString }, text);
   return `WECHATPAY2-SHA256-RSA2048 mchid="${mchid}",`
-    .concat(`nonce_str="${nonceStr}",signature="${encode(sign)}",`)
+    .concat(`nonce_str="${nonceStr}",signature="${encodeBase64(sign)}",`)
     .concat(`timestamp="${timestamp}",`)
     .concat(`serial_no="${rsaSN}"`);
 }

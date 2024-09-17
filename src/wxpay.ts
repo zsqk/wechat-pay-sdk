@@ -1,14 +1,12 @@
 import { genAuth } from './common/gen-auth.ts';
-import {
-  assertArray,
-  assertUnknownObject,
-} from 'https://deno.land/x/somefn@v0.27.1/ts/object.ts';
+import { assertArray, assertUnknownObject } from '@zsqk/somefn/ts/object';
+import { genAesKey } from '@zsqk/somefn/js/aes';
+
 import {
   assertCertificate,
   Certificate,
   decryptCertificate,
 } from './components/get-certificates.ts';
-import { genAesKey } from 'https://deno.land/x/somefn@v0.28.1/js/aes.ts';
 import {
   PrepayReqParams,
   PrepayRes,

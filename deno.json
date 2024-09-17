@@ -18,11 +18,13 @@
     }
   },
   "fmt": {
-    "options": {
-      "useTabs": false,
-      "lineWidth": 80,
-      "indentWidth": 2,
-      "singleQuote": true
-    }
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "singleQuote": true
+  },
+  "imports": {
+    "@std/encoding": "jsr:@std/encoding@^1.0.5",
+    "@zsqk/somefn": "jsr:@zsqk/somefn@^0.1.1"
   }
 }
