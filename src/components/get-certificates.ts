@@ -1,5 +1,5 @@
-import { assertUnknownObject } from 'https://deno.land/x/somefn@v0.28.0/ts/object.ts';
-import { decrypt } from 'https://deno.land/x/somefn@v0.28.1/js/aes.ts';
+import { assertUnknownObject } from '@zsqk/somefn/ts/object';
+import { decrypt } from '@zsqk/somefn/js/aes';
 
 /**
  * [业务类型] 微信支付 平台证书

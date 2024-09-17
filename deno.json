@@ -24,6 +24,7 @@
     "singleQuote": true
   },
   "imports": {
+    "@std/encoding": "jsr:@std/encoding@^1.0.5",
     "@zsqk/somefn": "jsr:@zsqk/somefn@^0.1.1"
   }
 }
