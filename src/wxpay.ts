@@ -207,13 +207,11 @@ export class WxpaySDK {
       path: '/v3/refund/domestic/refunds',
       body: p,
     });
-    if (typeof res !== 'string') {
-      throw new Error('请求有误!');
+    if (typeof res === 'string') {
+      return JSON.parse(res);
     }
-    const result = JSON.parse(res);
-    return result;
+    return res as RefundRes;
   }
-
   /**
    * 获取平台证书
    * 接口的频率限制: 单个商户号1000 次/s
